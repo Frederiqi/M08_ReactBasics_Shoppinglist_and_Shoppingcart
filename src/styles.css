@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(72, 160, 145);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    background-color:black;
+}
+
+li {
+    list-style-type: none;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+ul {
+    width: 40vw;
+    margin: 10px 0;
+}
+
+.groceryList {
+    background-color: rgb(135, 250, 206);
+}
+
+.shoppingCart {
+    background-color: rgb(238, 255, 0);
+}
+
+.shoppingCart li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.groceryList li:nth-child(odd), 
+.shoppingCart li:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.groceryList li:nth-child(even), 
+.shoppingCart li:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    border: 0;
+    padding: 5px 5px;
+    background-color: rgb(225, 169, 65);
+}
+
+form {
+    display: flex;
+}
+
+form button {
+    border: 0;
+    padding: 5px 5px;
+    margin-left: 5px;
+    background-color: rgb(119, 184, 82);
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0 ;
+}
